@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="am">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tu S Security and Cleaning Services (ቱ ኤስ የጥበቃ እና የፅዳት አገልግሎት) — professional security and cleaning solutions in Addis Ababa."
+    />
+    <title>ቱ ኤስ የጥበቃ እና የፅዳት አገልግሎት</title>
+
+    <link rel="icon" href="logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="logo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandBlue: "#1e3a8a",
+              charcoal: "#374151",
+            },
+            fontFamily: {
+              sans: ["Noto Sans Ethiopic", "system-ui", "Segoe UI", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 18px 45px rgba(0, 0, 0, 0.18)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Ambient background + interactivity (custom CSS layered on Tailwind) */
+      :root {
+        --ink: #071225;
+        --cyan: #1fb7ea;
+        --deep: #0b1220;
+      }
+
+      .ambient {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+        background: radial-gradient(circle at 40% 10%, rgba(31, 183, 234, 0.14), transparent 55%),
+          radial-gradient(circle at 80% 70%, rgba(30, 58, 138, 0.18), transparent 55%),
+          linear-gradient(180deg, rgba(248, 250, 252, 1), rgba(255, 255, 255, 1));
+      }
+
+      .ambient__video {
+        position: absolute;
+        inset: -12%;
+        width: 124%;
+        height: 124%;
+        object-fit: cover;
+        filter: blur(2px) saturate(1.08) contrast(1.06);
+        opacity: 0.42;
+        transform: scale(1.03);
+        mix-blend-mode: multiply;
+      }
+
+      .ambient__photo {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        filter: saturate(1.05) contrast(1.06);
+        mix-blend-mode: soft-light;
+        transition: opacity 900ms ease;
+      }
+
+      .ambient__photo--a {
+        opacity: 0.28;
+      }
+
+      .ambient__photo--b {
+        opacity: 0;
+      }
+
+      .ambient__glow {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle at var(--spot-x, 18%) var(--spot-y, 14%),
+            rgba(30, 58, 138, 0.22),
+            transparent 52%
+          ),
+          radial-gradient(circle at 86% 28%, rgba(16, 185, 129, 0.18), transparent 46%),
+          radial-gradient(circle at 55% 84%, rgba(255, 255, 255, 0.22), transparent 46%);
+        opacity: 0.9;
+      }
+
+      .ambient__grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(7, 18, 37, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(7, 18, 37, 0.06) 1px, transparent 1px);
+        background-size: 46px 46px;
+        opacity: 0.55;
+        mask-image: radial-gradient(circle at 50% 35%, rgba(0, 0, 0, 0.9), transparent 72%);
+      }
+
+      .ambient__scan {
+        position: absolute;
+        inset: -40%;
+        background:
+          repeating-linear-gradient(
+            120deg,
+            rgba(31, 183, 234, 0.0) 0 22px,
+            rgba(31, 183, 234, 0.12) 22px 24px,
+            rgba(31, 183, 234, 0.0) 24px 48px
+          );
+        opacity: 0.34;
+        transform: translate3d(0, 0, 0);
+        animation: ambient-scan 14s linear infinite;
+        mix-blend-mode: screen;
+      }
+
+      @keyframes ambient-scan {
+        0% {
+          transform: translate3d(-6%, -2%, 0) rotate(-2deg);
+        }
+        100% {
+          transform: translate3d(6%, 2%, 0) rotate(-2deg);
+        }
+      }
+
+      .ambient__floaters {
+        position: absolute;
+        inset: 0;
+        opacity: 0.95;
+      }
+
+      .ambient__floater {
+        position: absolute;
+        width: clamp(180px, 26vw, 380px);
+        aspect-ratio: 1 / 1;
+        border-radius: 999px;
+        background-size: cover;
+        background-position: center;
+        filter: saturate(1.2) contrast(1.08);
+        box-shadow: 0 30px 90px rgba(2, 6, 23, 0.22);
+        mix-blend-mode: screen;
+        opacity: 0.34;
+        transform: translate3d(0, 0, 0);
+        animation: ambient-drift 18s ease-in-out infinite;
+      }
+
+      .ambient__floater--1 {
+        top: -6%;
+        left: -4%;
+        animation-duration: 20s;
+      }
+
+      .ambient__floater--2 {
+        top: 12%;
+        right: -6%;
+        width: clamp(160px, 22vw, 320px);
+        animation-duration: 24s;
+        animation-delay: -6s;
+      }
+
+      .ambient__floater--3 {
+        bottom: -10%;
+        left: 10%;
+        width: clamp(220px, 30vw, 420px);
+        animation-duration: 26s;
+        animation-delay: -12s;
+      }
+
+      .ambient__floater--4 {
+        bottom: 14%;
+        right: 12%;
+        width: clamp(150px, 20vw, 290px);
+        animation-duration: 22s;
+        animation-delay: -9s;
+      }
+
+      @keyframes ambient-drift {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+          transform: translate3d(18px, -12px, 0) scale(1.04);
+        }
+      }
+
+      .ambient__vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 50% 50%, transparent 30%, rgba(2, 6, 23, 0.18));
+        opacity: 0.9;
+      }
+
+      @media (max-width: 640px) {
+        .ambient__video {
+          display: none;
+        }
+        .ambient__photo--a {
+          opacity: 0.38;
+        }
+        .ambient__grid {
+          opacity: 0.7;
+        }
+        .ambient__scan {
+          opacity: 0.28;
+        }
+        .ambient__floater {
+          opacity: 0.24;
+          filter: saturate(1.15) contrast(1.04);
+        }
+      }
+
+      /* Let the ambient background actually show through */
+      #services.bg-gray-50,
+      #contact.bg-gray-50 {
+        background-color: transparent !important;
+      }
+
+      #services > div,
+      #contact > div {
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.78);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.55);
+        box-shadow: 0 26px 70px rgba(2, 6, 23, 0.10);
+      }
+
+      @media (max-width: 640px) {
+        #services > div,
+        #contact > div {
+          border-radius: 22px;
+          background: rgba(255, 255, 255, 0.86);
+        }
+      }
+
+      /* Scroll reveal */
+      [data-reveal] {
+        opacity: 0;
+        transform: translateY(14px);
+        transition: opacity 520ms ease, transform 520ms ease;
+      }
+
+      [data-reveal].is-inview {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Moments modal */
+      .moments {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        display: grid;
+        place-items: center;
+        background: rgba(2, 6, 23, 0.56);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+
+      .moments__panel {
+        width: min(1040px, calc(100vw - 2rem));
+        max-height: calc(100vh - 2rem);
+        overflow: auto;
+        transform: translateY(10px) scale(0.985);
+        opacity: 0;
+        transition: transform 220ms ease, opacity 220ms ease;
+      }
+
+      .moments.is-open .moments__panel {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+
+      .moments__tile {
+        border-radius: 18px;
+        overflow: hidden;
+        background: rgba(15, 23, 42, 0.06);
+      }
+
+      .moments__tile img,
+      .moments__tile video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .brand-logo {
+        width: 40px;
+        height: 40px;
