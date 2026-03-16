@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" role="img" aria-label="Placeholder client logo strip">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1fb7ea" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#1e3a8a" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="160" rx="28" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.18"/>
+  <g fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round" opacity="0.8">
+    <path d="M110 84h120"/>
+    <path d="M320 84h120"/>
+    <path d="M530 84h120"/>
+    <path d="M740 84h120"/>
+    <path d="M950 84h120"/>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.72" font-family="system-ui,Segoe UI,Arial" font-size="14">
+    <text x="120" y="62">REPLACE</text>
+    <text x="330" y="62">REPLACE</text>
+    <text x="540" y="62">REPLACE</text>
+    <text x="750" y="62">REPLACE</text>
+    <text x="960" y="62">REPLACE</text>
+  </g>
+  <g fill="#ffffff" fill-opacity="0.55" font-family="system-ui,Segoe UI,Arial" font-size="12">
+    <text x="112" y="112">Client logo</text>
+    <text x="322" y="112">Client logo</text>
+    <text x="532" y="112">Client logo</text>
+    <text x="742" y="112">Client logo</text>
+    <text x="952" y="112">Client logo</text>
+  </g>
+</svg>
+
