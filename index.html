@@ -168,18 +168,16 @@
         z-index: -1;
         pointer-events: none;
         overflow: hidden;
-        background:
-          radial-gradient(
-            circle at 40% 10%,
-            rgba(31, 183, 234, 0.12),
-            transparent 55%
-          ),
-          radial-gradient(
-            circle at 78% 70%,
-            rgba(30, 58, 138, 0.16),
-            transparent 55%
-          ),
-          linear-gradient(180deg, #020617, #061225 30%, #0b1b3a 85%);
+        background: linear-gradient(180deg, #020617, #061225 30%, #0b1b3a 85%);
+      }
+
+      .ambient::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url("assets/brand/logo.jpg") center / 420px no-repeat;
+        opacity: 0.12;
+        filter: saturate(1.05) contrast(1.05);
       }
 
       .ambient__video {
@@ -509,38 +507,6 @@
     </div>
 
     <div class="ambient" aria-hidden="true">
-      <video
-        class="ambient__video"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="metadata"
-        poster="assets/team/photo_2026-03-14_10-24-40.jpg"
-      >
-        <source src="assets/team/video_2026-03-14_10-24-45.mp4" type="video/mp4" />
-      </video>
-      <div class="ambient__floaters">
-        <div
-          class="ambient__floater ambient__floater--1"
-          style='background-image: url("assets/team/photo_2026-03-14_10-24-33.jpg")'
-        ></div>
-        <div
-          class="ambient__floater ambient__floater--2"
-          style='background-image: url("assets/team/photo_2026-03-14_10-24-36.jpg")'
-        ></div>
-        <div
-          class="ambient__floater ambient__floater--3"
-          style='background-image: url("assets/team/photo_2026-03-14_10-24-31.jpg")'
-        ></div>
-        <div
-          class="ambient__floater ambient__floater--4"
-          style='background-image: url("assets/team/photo_2026-03-14_10-24-40.jpg")'
-        ></div>
-      </div>
-      <div class="ambient__glow"></div>
-      <div class="ambient__grid"></div>
-      <div class="ambient__scan"></div>
       <div class="ambient__vignette"></div>
     </div>
 
