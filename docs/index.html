@@ -1,0 +1,1541 @@
+﻿<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tu S Security & Cleaning Service PLC — professional security and cleaning solutions."
+    />
+    <meta name="theme-color" content="#0b1b3a" />
+
+    <meta property="og:title" content="Tu S Security & Cleaning Service PLC" />
+    <meta
+      property="og:description"
+      content="Professional security and cleaning solutions in Addis Ababa."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/brand/logo.jpg" />
+    <title>Tu S Security &amp; Cleaning Service PLC</title>
+
+    <link rel="icon" href="assets/brand/logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="assets/brand/logo.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: "#061225",
+              navy: "#0b1b3a",
+              brand: "#1e3a8a",
+              cyan: "#1fb7ea",
+            },
+            fontFamily: {
+              display: ["Sora", "system-ui", "Segoe UI", "sans-serif"],
+              sans: [
+                "Noto Sans Ethiopic",
+                "Sora",
+                "system-ui",
+                "Segoe UI",
+                "sans-serif",
+              ],
+            },
+            boxShadow: {
+              glow: "0 30px 90px rgba(31, 183, 234, 0.18)",
+              soft: "0 18px 45px rgba(0, 0, 0, 0.18)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --spot-x: 18%;
+        --spot-y: 16%;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      [data-lang="am"] [data-en] {
+        display: none !important;
+      }
+
+      [data-lang="en"] [data-am] {
+        display: none !important;
+      }
+
+      html[data-theme="light"] .ambient {
+        background:
+          radial-gradient(circle at 40% 10%, rgba(31, 183, 234, 0.14), transparent 55%),
+          radial-gradient(circle at 80% 70%, rgba(30, 58, 138, 0.18), transparent 55%),
+          linear-gradient(180deg, rgba(248, 250, 252, 1), rgba(255, 255, 255, 1));
+      }
+
+      html[data-theme="light"] body {
+        color: #071225;
+      }
+
+      html[data-theme="light"] .ambient__video {
+        opacity: 0.32;
+        filter: blur(2px) saturate(1.06) contrast(1.06);
+        mix-blend-mode: multiply;
+      }
+
+      html[data-theme="light"] .glass {
+        background: rgba(255, 255, 255, 0.78);
+        border-color: rgba(2, 6, 23, 0.10);
+      }
+
+      html[data-theme="light"] .border-white\/10,
+      html[data-theme="light"] .border-white\/12,
+      html[data-theme="light"] .border-white\/14,
+      html[data-theme="light"] .border-white\/18 {
+        border-color: rgba(2, 6, 23, 0.10) !important;
+      }
+
+      html[data-theme="light"] .bg-black\/35,
+      html[data-theme="light"] .bg-black\/25,
+      html[data-theme="light"] .bg-black\/20 {
+        background-color: rgba(255, 255, 255, 0.40) !important;
+      }
+
+      html[data-theme="light"] .bg-white\/10,
+      html[data-theme="light"] .bg-white\/5 {
+        background-color: rgba(2, 6, 23, 0.04) !important;
+      }
+
+      html[data-theme="light"] .ring-white\/15 {
+        --tw-ring-color: rgba(2, 6, 23, 0.10) !important;
+      }
+
+      html[data-theme="light"] .text-white {
+        color: #071225 !important;
+      }
+
+      html[data-theme="light"] .text-white\/85 {
+        color: rgba(7, 18, 37, 0.85) !important;
+      }
+
+      html[data-theme="light"] .text-white\/80 {
+        color: rgba(7, 18, 37, 0.80) !important;
+      }
+
+      html[data-theme="light"] .text-white\/75 {
+        color: rgba(7, 18, 37, 0.75) !important;
+      }
+
+      html[data-theme="light"] .text-white\/70 {
+        color: rgba(7, 18, 37, 0.70) !important;
+      }
+
+      html[data-theme="light"] .text-white\/65 {
+        color: rgba(7, 18, 37, 0.65) !important;
+      }
+
+      html[data-theme="light"] .text-white\/60 {
+        color: rgba(7, 18, 37, 0.60) !important;
+      }
+
+      html[data-theme="light"] .text-white\/35 {
+        color: rgba(7, 18, 37, 0.35) !important;
+      }
+
+      html[data-theme="light"] .text-white\/30 {
+        color: rgba(7, 18, 37, 0.30) !important;
+      }
+
+      html[data-theme="light"] .ambient__grid {
+        background-image:
+          linear-gradient(rgba(7, 18, 37, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(7, 18, 37, 0.06) 1px, transparent 1px);
+      }
+
+      .ambient {
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        pointer-events: none;
+        overflow: hidden;
+        background:
+          radial-gradient(
+            circle at 40% 10%,
+            rgba(31, 183, 234, 0.12),
+            transparent 55%
+          ),
+          radial-gradient(
+            circle at 78% 70%,
+            rgba(30, 58, 138, 0.16),
+            transparent 55%
+          ),
+          linear-gradient(180deg, #020617, #061225 30%, #0b1b3a 85%);
+      }
+
+      .ambient__video {
+        position: absolute;
+        inset: -12%;
+        width: 124%;
+        height: 124%;
+        object-fit: cover;
+        opacity: 0.35;
+        filter: saturate(1.06) contrast(1.06) blur(1px);
+        mix-blend-mode: screen;
+      }
+
+      .ambient__glow {
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(
+            circle at var(--spot-x) var(--spot-y),
+            rgba(31, 183, 234, 0.2),
+            transparent 52%
+          ),
+          radial-gradient(
+            circle at 80% 25%,
+            rgba(30, 58, 138, 0.22),
+            transparent 52%
+          ),
+          radial-gradient(
+            circle at 55% 84%,
+            rgba(255, 255, 255, 0.1),
+            transparent 46%
+          );
+      }
+
+      .ambient__grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+        background-size: 54px 54px;
+        opacity: 0.5;
+        mask-image: radial-gradient(
+          circle at 50% 28%,
+          rgba(0, 0, 0, 1),
+          transparent 70%
+        );
+      }
+
+      .ambient__scan {
+        position: absolute;
+        inset: -35%;
+        background: repeating-linear-gradient(
+          120deg,
+          rgba(31, 183, 234, 0) 0 26px,
+          rgba(31, 183, 234, 0.12) 26px 28px,
+          rgba(31, 183, 234, 0) 28px 60px
+        );
+        opacity: 0.28;
+        animation: ambient-scan 14s linear infinite;
+        mix-blend-mode: screen;
+      }
+
+      @keyframes ambient-scan {
+        0% {
+          transform: translate3d(-6%, -2%, 0) rotate(-2deg);
+        }
+        100% {
+          transform: translate3d(6%, 2%, 0) rotate(-2deg);
+        }
+      }
+
+      .ambient__floaters {
+        position: absolute;
+        inset: 0;
+        opacity: 0.85;
+      }
+
+      .ambient__floater {
+        position: absolute;
+        width: clamp(190px, 26vw, 420px);
+        aspect-ratio: 1 / 1;
+        border-radius: 999px;
+        background-size: cover;
+        background-position: center;
+        filter: saturate(1.25) contrast(1.08);
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+        opacity: 0.22;
+        mix-blend-mode: screen;
+        animation: ambient-drift 22s ease-in-out infinite;
+      }
+
+      .ambient__floater--1 {
+        top: -8%;
+        left: -5%;
+        animation-duration: 24s;
+      }
+
+      .ambient__floater--2 {
+        top: 12%;
+        right: -6%;
+        width: clamp(170px, 22vw, 360px);
+        animation-duration: 26s;
+        animation-delay: -7s;
+      }
+
+      .ambient__floater--3 {
+        bottom: -12%;
+        left: 8%;
+        width: clamp(220px, 30vw, 460px);
+        animation-duration: 28s;
+        animation-delay: -12s;
+      }
+
+      .ambient__floater--4 {
+        bottom: 14%;
+        right: 12%;
+        width: clamp(160px, 20vw, 320px);
+        animation-duration: 25s;
+        animation-delay: -9s;
+      }
+
+      @keyframes ambient-drift {
+        0%,
+        100% {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        50% {
+          transform: translate3d(18px, -12px, 0) scale(1.04);
+        }
+      }
+
+      .ambient__vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 50% 40%,
+          transparent 18%,
+          rgba(2, 6, 23, 0.72)
+        );
+      }
+
+      @media (max-width: 640px) {
+        .ambient__video {
+          display: none;
+        }
+        .ambient__grid {
+          opacity: 0.6;
+          background-size: 46px 46px;
+        }
+        .ambient__scan {
+          opacity: 0.22;
+        }
+        .ambient__floater {
+          opacity: 0.16;
+        }
+      }
+
+      .slash {
+        clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 92%);
+      }
+
+      .glass {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      [data-reveal] {
+        opacity: 0;
+        transform: translateY(14px);
+        transition: opacity 520ms ease, transform 520ms ease;
+      }
+
+      [data-reveal].is-inview {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .moments {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        display: grid;
+        place-items: center;
+        background: rgba(2, 6, 23, 0.66);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+
+      .moments__panel {
+        width: min(1100px, calc(100vw - 2rem));
+        max-height: calc(100vh - 2rem);
+        overflow: auto;
+        transform: translateY(10px) scale(0.985);
+        opacity: 0;
+        transition: transform 220ms ease, opacity 220ms ease;
+      }
+
+      .moments.is-open .moments__panel {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+
+      .moments__tile {
+        border-radius: 18px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .moments__tile img,
+      .moments__tile video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .faq__btn[aria-expanded="true"] .faq__chev {
+        transform: rotate(180deg);
+      }
+
+      .contact-panel {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-panel::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 18% 22%, rgba(31, 183, 234, 0.18), transparent 55%),
+          radial-gradient(circle at 86% 30%, rgba(30, 58, 138, 0.24), transparent 58%),
+          repeating-linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.04) 0 2px,
+            rgba(255, 255, 255, 0) 2px 54px
+          ),
+          repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.04) 0 2px,
+            rgba(255, 255, 255, 0) 2px 54px
+          );
+        opacity: 0.9;
+        mask-image: radial-gradient(circle at 40% 35%, rgba(0, 0, 0, 1), transparent 72%);
+        pointer-events: none;
+      }
+
+      html[data-theme="light"] .contact-panel::before {
+        background:
+          radial-gradient(circle at 18% 22%, rgba(31, 183, 234, 0.16), transparent 55%),
+          radial-gradient(circle at 86% 30%, rgba(30, 58, 138, 0.18), transparent 58%),
+          repeating-linear-gradient(
+            90deg,
+            rgba(7, 18, 37, 0.06) 0 2px,
+            rgba(255, 255, 255, 0) 2px 54px
+          ),
+          repeating-linear-gradient(
+            0deg,
+            rgba(7, 18, 37, 0.06) 0 2px,
+            rgba(255, 255, 255, 0) 2px 54px
+          );
+      }
+
+      .progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        z-index: 70;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .progress > div {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, rgba(31, 183, 234, 1), rgba(30, 58, 138, 1));
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        [data-reveal] {
+          transition: none;
+          opacity: 1;
+          transform: none;
+        }
+        .moments__panel {
+          transition: none;
+          transform: none;
+          opacity: 1;
+        }
+        .ambient__scan,
+        .ambient__floater {
+          animation: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="min-h-screen bg-transparent font-sans text-white antialiased" data-lang="en">
+    <div class="progress" aria-hidden="true"><div></div></div>
+
+    <div class="fixed top-4 right-4 z-50 flex gap-3">
+      <button
+        id="themeToggle"
+        type="button"
+        class="rounded-2xl border border-white/14 bg-white/10 px-4 py-2 text-sm font-extrabold text-white shadow-soft hover:bg-white/15"
+        aria-label="Toggle dark and light theme"
+      >
+        <span id="themeLabel">Light</span>
+      </button>
+      <button
+        id="langToggle"
+        type="button"
+        class="rounded-2xl bg-cyan px-4 py-2 text-sm font-extrabold text-ink shadow-soft hover:brightness-110"
+        aria-label="Switch language between English and Amharic"
+      >
+        <span data-en>አማ</span>
+        <span data-am>EN</span>
+      </button>
+    </div>
+
+    <div class="ambient" aria-hidden="true">
+      <video
+        class="ambient__video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        poster="assets/team/photo_2026-03-14_10-24-40.jpg"
+      >
+        <source src="assets/team/video_2026-03-14_10-24-45.mp4" type="video/mp4" />
+      </video>
+      <div class="ambient__floaters">
+        <div
+          class="ambient__floater ambient__floater--1"
+          style='background-image: url("assets/team/photo_2026-03-14_10-24-33.jpg")'
+        ></div>
+        <div
+          class="ambient__floater ambient__floater--2"
+          style='background-image: url("assets/team/photo_2026-03-14_10-24-36.jpg")'
+        ></div>
+        <div
+          class="ambient__floater ambient__floater--3"
+          style='background-image: url("assets/team/photo_2026-03-14_10-24-31.jpg")'
+        ></div>
+        <div
+          class="ambient__floater ambient__floater--4"
+          style='background-image: url("assets/team/photo_2026-03-14_10-24-40.jpg")'
+        ></div>
+      </div>
+      <div class="ambient__glow"></div>
+      <div class="ambient__grid"></div>
+      <div class="ambient__scan"></div>
+      <div class="ambient__vignette"></div>
+    </div>
+
+    <a
+      class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:font-semibold focus:text-ink"
+      href="#main"
+      >Skip to content</a
+    >
+
+    <div class="hidden border-b border-white/10 bg-black/20 md:block">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 text-sm text-white/80">
+        <div class="flex items-center gap-4">
+          <span class="inline-flex items-center gap-2">
+            <span class="h-1.5 w-1.5 rounded-full bg-cyan"></span>
+            <span data-en>Addis Ababa • Akaki Kality</span>
+            <span data-am>አዲስ አበባ • አቃቂ ቃሊቲ</span>
+          </span>
+          <span class="text-white/35">|</span>
+          <span data-en>24/7 Support • Rapid Response</span>
+          <span data-am>24/7 ድጋፍ • ፈጣን ምላሽ</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a class="hover:text-white" href="#contact">0911142818</a>
+          <a class="rounded-full bg-white/10 px-3 py-1 font-semibold text-white hover:bg-white/15" href="#contact"
+            ><span data-en>Request a Quote</span><span data-am>ዋጋ ጥያቄ</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-black/25 backdrop-blur">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex h-16 items-center justify-between gap-3">
+          <a href="#home" class="flex items-center gap-3">
+            <div class="grid h-11 w-11 place-items-center overflow-hidden rounded-xl bg-white ring-1 ring-white/15">
+              <img src="assets/brand/logo.jpg" alt="Tu S logo" class="h-10 w-10 object-contain" />
+            </div>
+            <div class="leading-tight">
+              <div class="font-display text-sm font-extrabold tracking-tight text-white">
+                <span data-en>TU S Security &amp; Cleaning</span>
+                <span data-am>ቱ ኤስ የጥበቃ እና የፅዳት</span>
+              </div>
+              <div class="text-xs text-white/70">
+                <span data-en>SERVICE PLC</span>
+                <span data-am>አገልግሎት PLC</span>
+              </div>
+            </div>
+          </a>
+
+          <nav class="hidden items-center gap-1 md:flex" aria-label="Primary">
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#services"
+              ><span data-en>Services</span><span data-am>አገልግሎቶች</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#industries"
+              ><span data-en>Industries</span><span data-am>ዘርፎች</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#team"
+              ><span data-en>Our Team</span><span data-am>ቡድናችን</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#faq"
+              ><span data-en>FAQ</span><span data-am>ተደጋጋሚ ጥያቄዎች</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#credentials"
+              ><span data-en>Credentials</span><span data-am>ማረጋገጫዎች</span></a
+            >
+            <a
+              class="ml-2 inline-flex items-center gap-2 rounded-xl bg-cyan/15 px-4 py-2 text-sm font-extrabold text-white shadow-glow ring-1 ring-cyan/30 hover:bg-cyan/20"
+              href="#contact"
+            >
+              <span class="h-2 w-2 rounded-full bg-cyan"></span>
+              <span data-en>Get Protected</span>
+              <span data-am>ጥበቃ ይጠይቁ</span>
+            </a>
+          </nav>
+
+          <button
+            id="menuBtn"
+            class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 p-2 text-white hover:bg-white/15 md:hidden"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span class="text-sm font-bold"><span data-en>Menu</span><span data-am>ሜኑ</span></span>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden pb-4 md:hidden">
+          <div class="grid gap-2 rounded-2xl border border-white/12 bg-black/35 p-3 backdrop-blur">
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#services"
+              ><span data-en>Services</span><span data-am>አገልግሎቶች</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#industries"
+              ><span data-en>Industries</span><span data-am>ዘርፎች</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#team"
+              ><span data-en>Our Team</span><span data-am>ቡድናችን</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#faq"
+              ><span data-en>FAQ</span><span data-am>ተደጋጋሚ ጥያቄዎች</span></a
+            >
+            <a class="rounded-lg px-3 py-2 text-sm font-semibold text-white/85 hover:bg-white/10" href="#credentials"
+              ><span data-en>Credentials</span><span data-am>ማረጋገጫዎች</span></a
+            >
+            <a
+              class="mt-1 inline-flex items-center justify-center gap-2 rounded-xl bg-cyan/15 px-4 py-2 text-sm font-extrabold text-white ring-1 ring-cyan/30 hover:bg-cyan/20"
+              href="#contact"
+              ><span data-en>Request a Quote</span><span data-am>ዋጋ ጥያቄ</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="home" class="slash relative overflow-hidden">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div class="grid items-center gap-10 lg:grid-cols-12">
+            <div class="lg:col-span-7">
+              <div
+                class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/15"
+                data-reveal
+              >
+                <span class="h-2 w-2 rounded-full bg-cyan"></span>
+                <span data-en>Professional Security and Cleaning Solutions</span>
+                <span data-am>የባለሙያ የጥበቃ እና የፅዳት አገልግሎት</span>
+              </div>
+              <h1 class="mt-6 font-display text-4xl font-extrabold tracking-tight text-white md:text-6xl" data-reveal>
+                <span data-en>
+                  Security you can trust.
+                  <span class="text-cyan">Service</span> you can see.
+                </span>
+                <span data-am>የሚታመን ጥበቃ። <span class="text-cyan">የሚታይ</span> አገልግሎት።</span>
+              </h1>
+              <p class="mt-5 max-w-2xl text-base text-white/80 md:text-lg" data-reveal>
+                <span data-en>
+                  Uniformed security teams, professional cleaning crews, and rapid response for government, private, and
+                  industrial sites.
+                </span>
+                <span data-am>
+                  ዩኒፎርም የለበሱ የጥበቃ ቡድኖች፣ ባለሙያ የፅዳት ቡድኖች እና ለመንግስት፣ ለግል እና ለኢንዱስትሪ ቦታዎች ፈጣን ምላሽ።
+                </span>
+              </p>
+
+              <div class="mt-8 flex flex-wrap items-center gap-3" data-reveal>
+                <a
+                  href="#contact"
+                  class="inline-flex items-center gap-2 rounded-xl bg-cyan px-5 py-3 text-sm font-extrabold text-ink shadow-soft hover:brightness-110"
+                >
+                  <span data-en>Request a Quote</span><span data-am>ዋጋ ጥያቄ</span>
+                </a>
+                <button
+                  id="openMomentsBtn"
+                  class="inline-flex items-center gap-2 rounded-xl border border-white/18 bg-white/10 px-5 py-3 text-sm font-extrabold text-white hover:bg-white/15"
+                  type="button"
+                >
+                  <span data-en>View Work Moments</span><span data-am>የስራ አፍታዎችን ይመልከቱ</span>
+                </button>
+              </div>
+
+              <div class="mt-10 grid gap-4 sm:grid-cols-3" data-reveal>
+                <div class="glass rounded-2xl p-4">
+                  <div class="text-sm font-extrabold text-white">
+                    <span data-en>Rapid Response</span><span data-am>ፈጣን ምላሽ</span>
+                  </div>
+                  <div class="mt-1 text-sm text-white/70">
+                    <span data-en>Fast deployment &amp; site support.</span><span data-am>ፈጣን መሰማራት እና የቦታ ድጋፍ።</span>
+                  </div>
+                </div>
+                <div class="glass rounded-2xl p-4">
+                  <div class="text-sm font-extrabold text-white">
+                    <span data-en>Uniformed Teams</span><span data-am>ዩኒፎርም የለበሱ ቡድኖች</span>
+                  </div>
+                  <div class="mt-1 text-sm text-white/70">
+                    <span data-en>Clear ID, consistent presence.</span><span data-am>ግልጽ መታወቂያ፣ ቀጣይ ተገኝታ።</span>
+                  </div>
+                </div>
+                <div class="glass rounded-2xl p-4">
+                  <div class="text-sm font-extrabold text-white">
+                    <span data-en>Quality Focus</span><span data-am>የጥራት ትኩረት</span>
+                  </div>
+                  <div class="mt-1 text-sm text-white/70">
+                    <span data-en>Reliable standards, every shift.</span><span data-am>ታማኝ መመዘኛዎች፣ በሁሉም ሰዓት።</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 lg:justify-self-end">
+              <div class="glass rounded-[28px] overflow-hidden p-0 shadow-glow" data-reveal>
+                <div class="border-b border-white/10 bg-white/5 p-5">
+                  <div class="flex items-start justify-between gap-4">
+                    <div>
+                      <div class="text-sm font-extrabold text-white">
+                        <span data-en>Replaceable hero media</span><span data-am>የሚተካ የመጀመሪያ ምስል</span>
+                      </div>
+                      <div class="mt-1 text-sm text-white/70">
+                        <span data-en>REPLACE: Swap this illustration with your real hero photo/graphic.</span>
+                        <span data-am>REPLACE: ይህን ምስል በእውነተኛ ፎቶ/ግራፊክ ይተኩ።</span>
+                      </div>
+                    </div>
+                    <span class="rounded-full bg-cyan/15 px-3 py-1 text-xs font-bold text-white ring-1 ring-cyan/30"
+                      >NOTE</span
+                    >
+                  </div>
+                </div>
+
+                <div class="p-5">
+                  <div class="overflow-hidden rounded-2xl border border-white/12 bg-black/30">
+                    <img
+                      src="assets/placeholders/hero-illustration.svg"
+                      alt="Placeholder hero illustration"
+                      class="h-[380px] w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="mt-4 grid gap-3 text-sm sm:grid-cols-3">
+                    <div class="rounded-2xl border border-white/12 bg-white/5 p-3">
+                      <div class="font-extrabold text-white"><span data-en>Security</span><span data-am>ጥበቃ</span></div>
+                      <div class="mt-1 text-white/70">
+                        <span data-en>Access control &amp; patrol.</span><span data-am>መግቢያ ቁጥጥር እና ፓትሮል።</span>
+                      </div>
+                    </div>
+                    <div class="rounded-2xl border border-white/12 bg-white/5 p-3">
+                      <div class="font-extrabold text-white"><span data-en>Cleaning</span><span data-am>ፅዳት</span></div>
+                      <div class="mt-1 text-white/70">
+                        <span data-en>Daily &amp; deep cleaning.</span><span data-am>የቀን እና ጥልቅ ፅዳት።</span>
+                      </div>
+                    </div>
+                    <div class="rounded-2xl border border-white/12 bg-white/5 p-3">
+                      <div class="font-extrabold text-white"><span data-en>Support</span><span data-am>ድጋፍ</span></div>
+                      <div class="mt-1 text-white/70">
+                        <span data-en>Fast response via WhatsApp/Telegram.</span><span data-am>በWhatsApp/Telegram ፈጣን ምላሽ።</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-y border-white/10 bg-black/25">
+        <div class="mx-auto max-w-6xl px-4 py-8">
+          <div class="grid gap-5 md:grid-cols-3">
+            <div class="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <div>
+                <div class="text-sm font-extrabold text-white">
+                  <span data-en>Certified &amp; Registered</span><span data-am>የተመዘገበ እና የተረጋገጠ</span>
+                </div>
+                <div class="mt-1 text-sm text-white/65">
+                  <span data-en>TIN, VAT, principal registration.</span><span data-am>TIN, VAT, ዋና ምዝገባ።</span>
+                </div>
+              </div>
+              <div class="h-10 w-10 rounded-2xl bg-cyan/15 ring-1 ring-cyan/30"></div>
+            </div>
+            <div class="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <div>
+                <div class="text-sm font-extrabold text-white">
+                  <span data-en>Flexible Coverage</span><span data-am>ተለዋዋጭ አገልግሎት</span>
+                </div>
+                <div class="mt-1 text-sm text-white/65">
+                  <span data-en>Government, private, industrial.</span><span data-am>መንግስት፣ ግል፣ ኢንዱስትሪ።</span>
+                </div>
+              </div>
+              <div class="h-10 w-10 rounded-2xl bg-white/10 ring-1 ring-white/15"></div>
+            </div>
+            <div class="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/5 px-5 py-4">
+              <div>
+                <div class="text-sm font-extrabold text-white">
+                  <span data-en>Client Support</span><span data-am>የደንበኛ ድጋፍ</span>
+                </div>
+                <div class="mt-1 text-sm text-white/65">
+                  <span data-en>Clear communication and reporting.</span><span data-am>ግልጽ ግንኙነት እና ሪፖርት።</span>
+                </div>
+              </div>
+              <div class="h-10 w-10 rounded-2xl bg-brand/20 ring-1 ring-white/10"></div>
+            </div>
+          </div>
+
+          <div class="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-4" data-reveal>
+            <div class="text-xs font-extrabold text-white/70">
+              <span data-en>REPLACE: Add your key clients/partners here</span>
+              <span data-am>REPLACE: የዋና ደንበኞች/አጋሮች ሎጎ እዚህ ያክሉ</span>
+            </div>
+            <img
+              src="assets/placeholders/logo-strip.svg"
+              alt="Placeholder client logos strip"
+              class="mt-3 w-full"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="relative">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+            <div class="lg:col-span-7">
+              <div class="text-sm font-extrabold text-cyan" data-reveal>
+                <span data-en>What we do</span><span data-am>እኛ ምን እናደርጋለን</span>
+              </div>
+              <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl" data-reveal>
+                <span data-en>Full coverage for security and cleaning</span>
+                <span data-am>ለጥበቃ እና ለፅዳት ሙሉ አገልግሎት</span>
+              </h2>
+              <p class="mt-4 max-w-2xl text-white/75" data-reveal>
+                <span data-en>Built for reliability: disciplined staff, consistent uniforms, and a service mindset.</span>
+                <span data-am>ታማኝነት ላይ የተመሰረተ፦ የተዘጋጁ ሰራተኞች፣ አንድነት ያለው ዩኒፎርም እና የአገልግሎት መንፈስ።</span>
+              </p>
+            </div>
+            <div class="lg:col-span-5 lg:text-right" data-reveal>
+              <a
+                class="inline-flex items-center gap-2 rounded-xl bg-cyan/15 px-4 py-2 text-sm font-extrabold text-white ring-1 ring-cyan/30 hover:bg-cyan/20"
+                href="#contact"
+                ><span data-en>Get a tailored quote</span><span data-am>የተሻለ ዋጋ ይጠይቁ</span></a
+              >
+            </div>
+          </div>
+
+          <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <article class="glass rounded-[28px] p-6 shadow-glow" data-reveal>
+              <div class="flex items-center justify-between gap-4">
+                <div class="font-extrabold">Security Services</div>
+                <div class="h-11 w-11 rounded-2xl bg-cyan/15 ring-1 ring-cyan/30"></div>
+              </div>
+              <p class="mt-3 text-sm text-white/75">On-site guards, access control, patrol routines, event coverage.</p>
+              <div class="mt-5 grid gap-2 text-sm text-white/75">
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Front desk / reception</div>
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Perimeter checks</div>
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Visitor control</div>
+              </div>
+            </article>
+            <article class="glass rounded-[28px] p-6 shadow-glow" data-reveal>
+              <div class="flex items-center justify-between gap-4">
+                <div class="font-extrabold">Cleaning Services</div>
+                <div class="h-11 w-11 rounded-2xl bg-white/10 ring-1 ring-white/15"></div>
+              </div>
+              <p class="mt-3 text-sm text-white/75">Daily cleaning, deep cleaning, consistent hygiene standards.</p>
+              <div class="mt-5 grid gap-2 text-sm text-white/75">
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Offices &amp; facilities</div>
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Restrooms &amp; common areas</div>
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Post-event cleanup</div>
+              </div>
+            </article>
+            <article class="glass rounded-[28px] p-6 shadow-glow" data-reveal>
+              <div class="flex items-center justify-between gap-4">
+                <div class="font-extrabold">Site Support</div>
+                <div class="h-11 w-11 rounded-2xl bg-brand/25 ring-1 ring-white/10"></div>
+              </div>
+              <p class="mt-3 text-sm text-white/75">Safety-aware staffing, reporting, reliable shift handovers.</p>
+              <div class="mt-5 grid gap-2 text-sm text-white/75">
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Uniformed + identifiable</div>
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Daily checklists</div>
+                <div class="rounded-xl border border-white/10 bg-white/5 px-3 py-2">Supervisor oversight</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="industries" class="border-y border-white/10 bg-black/25">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div class="lg:col-span-5">
+              <div class="text-sm font-extrabold text-cyan" data-reveal>Where we work</div>
+              <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl" data-reveal>
+                <span data-en>Coverage across sectors</span>
+                <span data-am>በተለያዩ ዘርፎች ላይ አገልግሎት</span>
+              </h2>
+              <p class="mt-4 text-white/75" data-reveal>
+                We adapt staffing and procedures based on the site, risk level, and daily operations.
+              </p>
+              <div class="mt-7 flex flex-wrap gap-2" data-reveal>
+                <span class="rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm font-semibold text-white/85">Government offices</span>
+                <span class="rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm font-semibold text-white/85">Private businesses</span>
+                <span class="rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm font-semibold text-white/85">Factories</span>
+                <span class="rounded-full border border-white/12 bg-white/5 px-4 py-2 text-sm font-semibold text-white/85">Hotels &amp; restaurants</span>
+              </div>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="grid gap-4 sm:grid-cols-2" data-reveal>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-sm font-extrabold">Access Control</div>
+                  <div class="mt-2 text-sm text-white/70">Entry procedures, visitor logs, gate checks.</div>
+                </div>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-sm font-extrabold">Patrol Routines</div>
+                  <div class="mt-2 text-sm text-white/70">Scheduled patrols and incident awareness.</div>
+                </div>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-sm font-extrabold">Daily Cleaning</div>
+                  <div class="mt-2 text-sm text-white/70">Consistent cleaning plans for busy facilities.</div>
+                </div>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-sm font-extrabold">Deep Cleaning</div>
+                  <div class="mt-2 text-sm text-white/70">Periodic resets and high-touch sanitation focus.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="border-y border-white/10 bg-black/25">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+            <div class="lg:col-span-5">
+              <div class="text-sm font-extrabold text-cyan" data-reveal>Questions</div>
+              <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl" data-reveal>
+                <span data-en>FAQ</span><span data-am>ተደጋጋሚ ጥያቄዎች</span>
+              </h2>
+              <p class="mt-4 text-white/75" data-reveal>Quick answers about staffing, supervision, and getting started.</p>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="grid gap-3" data-reveal>
+                <div class="glass rounded-[28px] p-0">
+                  <button
+                    class="faq__btn flex w-full items-center justify-between gap-4 px-6 py-5 text-left text-sm font-extrabold text-white"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq1"
+                  >
+                    How fast can you start service?
+                    <span class="faq__chev text-white/60" aria-hidden="true">▾</span>
+                  </button>
+                  <div id="faq1" class="hidden px-6 pb-6 text-sm text-white/70">
+                    After a quick site assessment and agreement on scope, we can deploy based on staffing needs and availability.
+                  </div>
+                </div>
+
+                <div class="glass rounded-[28px] p-0">
+                  <button
+                    class="faq__btn flex w-full items-center justify-between gap-4 px-6 py-5 text-left text-sm font-extrabold text-white"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq2"
+                  >
+                    Do you provide supervision and reporting?
+                    <span class="faq__chev text-white/60" aria-hidden="true">▾</span>
+                  </button>
+                  <div id="faq2" class="hidden px-6 pb-6 text-sm text-white/70">
+                    Yes. We emphasize attendance control, on-site supervision, and clear escalation. Reporting formats can be aligned to your site requirements.
+                  </div>
+                </div>
+
+                <div class="glass rounded-[28px] p-0">
+                  <button
+                    class="faq__btn flex w-full items-center justify-between gap-4 px-6 py-5 text-left text-sm font-extrabold text-white"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq3"
+                  >
+                    How do I request a quote?
+                    <span class="faq__chev text-white/60" aria-hidden="true">▾</span>
+                  </button>
+                  <div id="faq3" class="hidden px-6 pb-6 text-sm text-white/70">
+                    Use the WhatsApp / Telegram / Email buttons below — or call us directly for an immediate discussion.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team" class="relative">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+            <div class="lg:col-span-5">
+              <div class="text-sm font-extrabold text-cyan" data-reveal>Meet the team</div>
+              <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl" data-reveal>
+                <span data-en>Uniformed. Prepared. Client-ready.</span>
+                <span data-am>ዩኒፎርም። ዝግጁ። ለደንበኛ ተስማሚ።</span>
+              </h2>
+              <p class="mt-4 text-white/75" data-reveal>
+                This page uses your media in the background and in a moments gallery.
+              </p>
+              <div class="mt-8 flex flex-wrap items-center gap-3" data-reveal>
+                <button
+                  class="inline-flex items-center gap-2 rounded-xl bg-cyan px-5 py-3 text-sm font-extrabold text-ink shadow-soft hover:brightness-110"
+                  type="button"
+                  id="momentsFab"
+                >
+                  Open Moments
+                </button>
+                <a
+                  href="#contact"
+                  class="inline-flex items-center gap-2 rounded-xl border border-white/18 bg-white/10 px-5 py-3 text-sm font-extrabold text-white hover:bg-white/15"
+                  >Talk to us</a
+                >
+              </div>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="grid gap-6 sm:grid-cols-2" data-reveal>
+                <div class="glass rounded-[28px] p-4">
+                  <div class="overflow-hidden rounded-2xl border border-white/12">
+                    <img
+                      src="assets/team/photo_2026-03-14_10-24-31.jpg"
+                      alt="Event and office setting"
+                      class="h-[240px] w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="text-sm font-extrabold">Client-facing presence</div>
+                    <div class="mt-1 text-sm text-white/70">Professional service at offices and events.</div>
+                  </div>
+                </div>
+                <div class="glass rounded-[28px] p-4">
+                  <div class="overflow-hidden rounded-2xl border border-white/12">
+                    <img
+                      src="assets/team/photo_2026-03-14_10-24-33.jpg"
+                      alt="Team wearing safety vests"
+                      class="h-[240px] w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="mt-4">
+                    <div class="text-sm font-extrabold">Safety-ready teams</div>
+                    <div class="mt-1 text-sm text-white/70">High visibility on active sites.</div>
+                  </div>
+                </div>
+                <div class="glass rounded-[28px] p-4 sm:col-span-2">
+                  <div class="overflow-hidden rounded-2xl border border-white/12">
+                    <img
+                      src="assets/team/photo_2026-03-14_10-24-40.jpg"
+                      alt="Team group photo"
+                      class="h-[260px] w-full object-cover md:h-[320px]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="mt-4 flex flex-wrap items-center justify-between gap-2">
+                    <div>
+                      <div class="text-sm font-extrabold">Our team</div>
+                      <div class="mt-1 text-sm text-white/70">Ready for your next project.</div>
+                    </div>
+                    <button
+                      class="rounded-xl bg-white/10 px-4 py-2 text-sm font-extrabold text-white ring-1 ring-white/15 hover:bg-white/15"
+                      type="button"
+                      data-open-moments
+                    >
+                      View gallery
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="credentials" class="border-y border-white/10 bg-black/25">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+            <div class="lg:col-span-5">
+              <div class="text-sm font-extrabold text-cyan" data-reveal>Trust and compliance</div>
+              <h2 class="mt-3 font-display text-3xl font-extrabold tracking-tight md:text-4xl" data-reveal>
+                <span data-en>Company Credentials</span>
+                <span data-am>የኩባንያ ማረጋገጫዎች</span>
+              </h2>
+              <p class="mt-4 text-white/75" data-reveal>Registration details are displayed clearly for confidence.</p>
+            </div>
+            <div class="lg:col-span-7">
+              <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4" data-reveal>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-xs font-extrabold text-white/70">TIN</div>
+                  <div class="mt-2 text-base font-extrabold text-white">0067686717</div>
+                </div>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-xs font-extrabold text-white/70">Principal Reg</div>
+                  <div class="mt-2 text-sm font-extrabold text-white">AKK/AA/2/0007943/2012</div>
+                </div>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-xs font-extrabold text-white/70">VAT</div>
+                  <div class="mt-2 text-base font-extrabold text-white">16861290002</div>
+                </div>
+                <div class="glass rounded-[28px] p-6">
+                  <div class="text-xs font-extrabold text-white/70">Capital</div>
+                  <div class="mt-2 text-base font-extrabold text-white">141,000.00 ETB</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="relative">
+        <div class="mx-auto max-w-6xl px-4 py-16 md:py-20">
+          <div
+            class="contact-panel rounded-[34px] border border-white/10 bg-black/35 px-6 py-10 shadow-soft backdrop-blur md:px-10"
+            data-reveal
+          >
+            <div class="relative grid gap-10 md:grid-cols-3">
+              <div>
+                <div class="text-2xl font-extrabold text-white"><span data-en>About us</span><span data-am>ስለ እኛ</span></div>
+                <p class="mt-4 text-sm leading-7 text-white/75">
+                  <span data-en>
+                    Tu S Security &amp; Cleaning Service PLC provides professional guarding and cleaning services with clear procedures,
+                    supervised teams, and dependable day-to-day delivery.
+                  </span>
+                  <span data-am>
+                    ቱ ኤስ የጥበቃ እና የፅዳት አገልግሎት PLC በግልጽ መመሪያዎች፣ በቁጥጥር የሚሰሩ ቡድኖች እና ታማኝ አገልግሎት የጥበቃ እና የፅዳት ስራዎችን ይሰጣል።
+                  </span>
+                </p>
+
+                <div class="mt-6 flex items-center gap-3">
+                  <a
+                    href="#"
+                    class="grid h-11 w-11 place-items-center rounded-full bg-cyan/15 text-sm font-extrabold text-white ring-1 ring-cyan/30 hover:bg-cyan/20"
+                    aria-label="REPLACE: Facebook link"
+                    >f</a
+                  >
+                  <a
+                    href="#"
+                    class="grid h-11 w-11 place-items-center rounded-full bg-cyan/15 text-sm font-extrabold text-white ring-1 ring-cyan/30 hover:bg-cyan/20"
+                    aria-label="REPLACE: Instagram link"
+                    >ig</a
+                  >
+                  <a
+                    href="#"
+                    class="grid h-11 w-11 place-items-center rounded-full bg-cyan/15 text-sm font-extrabold text-white ring-1 ring-cyan/30 hover:bg-cyan/20"
+                    aria-label="REPLACE: Telegram channel link"
+                    >t</a
+                  >
+                  <a
+                    href="#"
+                    class="grid h-11 w-11 place-items-center rounded-full bg-cyan/15 text-sm font-extrabold text-white ring-1 ring-cyan/30 hover:bg-cyan/20"
+                    aria-label="REPLACE: LinkedIn link"
+                    >in</a
+                  >
+                </div>
+                <div class="mt-3 text-xs font-extrabold text-white/50">REPLACE: social links</div>
+              </div>
+
+              <div>
+                <div class="text-2xl font-extrabold text-white">
+                  <span data-en>Our services</span><span data-am>አገልግሎቶቻችን</span>
+                </div>
+                <ul class="mt-5 grid gap-3 text-sm text-white/75">
+                  <li class="flex gap-3">
+                    <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan"></span>
+                    <span data-en>Reliable Security Service</span><span data-am>ታማኝ የጥበቃ አገልግሎት</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan"></span>
+                    <span data-en>Professional Cleaning Service</span><span data-am>ባለሙያ የፅዳት አገልግሎት</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-cyan"></span>
+                    <span data-en>Event &amp; Site Support</span><span data-am>የክስተት እና የቦታ ድጋፍ</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="text-2xl font-extrabold text-white"><span data-en>Contact</span><span data-am>አግኙን</span></div>
+                <div class="mt-5 grid gap-3 text-sm text-white/80">
+                  <div><span class="font-extrabold text-white/85">Phone:</span> <a class="hover:underline" href="tel:+251911142818">+251 911 142 818</a></div>
+                  <div><span class="font-extrabold text-white/85">WhatsApp:</span> <a id="whatsappLink" class="hover:underline" href="https://wa.me/251911142818" target="_blank" rel="noreferrer">Open WhatsApp</a></div>
+                  <div><span class="font-extrabold text-white/85">Telegram:</span> <a id="telegramLink" class="hover:underline" href="https://t.me/share/url" target="_blank" rel="noreferrer">Open Telegram</a></div>
+                  <div><span class="font-extrabold text-white/85"><span data-en>Email</span><span data-am>ኢሜይል</span>:</span> <a id="emailLink" class="hover:underline" href="mailto:">Open email</a></div>
+                  <div class="pt-2 text-white/75">
+                    <span class="font-extrabold text-white/85"><span data-en>Address</span><span data-am>አድራሻ</span>:</span>
+                    <span data-en>Addis Ababa, Akaki Kality, Woreda 07, House No. D002.</span>
+                    <span data-am>አዲስ አበባ፣ አቃቂ ቃሊቲ፣ ወረዳ 07፣ ቤት ቁጥር D002።</span>
+                  </div>
+                </div>
+
+                <div class="mt-6 grid gap-3 sm:grid-cols-3">
+                  <a
+                    href="#home"
+                    class="inline-flex items-center justify-center rounded-xl bg-cyan px-4 py-3 text-xs font-extrabold text-ink shadow-soft hover:brightness-110"
+                    ><span data-en>Back to top</span><span data-am>ወደ ላይ</span></a
+                  >
+                  <button
+                    type="button"
+                    class="inline-flex items-center justify-center rounded-xl border border-white/14 bg-white/10 px-4 py-3 text-xs font-extrabold text-white hover:bg-white/15"
+                    data-open-moments
+                  >
+                    <span data-en>View moments</span><span data-am>አፍታዎች</span>
+                  </button>
+                  <a
+                    href="#services"
+                    class="inline-flex items-center justify-center rounded-xl border border-white/14 bg-white/10 px-4 py-3 text-xs font-extrabold text-white hover:bg-white/15"
+                    ><span data-en>Services</span><span data-am>አገልግሎት</span></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="relative mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
+              <div>© 2026 Tu S Security &amp; Cleaning Service PLC</div>
+              <div class="text-white/55">
+                <span class="font-extrabold text-white/70">TIN:</span> 0067686717
+                <span class="mx-2 text-white/30">|</span>
+                <span class="font-extrabold text-white/70">VAT:</span> 16861290002
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10 overflow-hidden rounded-[28px] border border-white/12 bg-black/20 shadow-soft" data-reveal>
+            <div class="relative">
+              <a
+                class="absolute left-4 top-4 inline-flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2 text-xs font-extrabold text-white ring-1 ring-white/15 hover:bg-white/15"
+                href="https://www.google.com/maps?q=8.8958,38.786"
+                target="_blank"
+                rel="noreferrer"
+                >Open in Maps</a
+              >
+            <iframe
+              title="Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.0!2d38.786!3d8.8958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwNTMnNDUuMCJOIDM4wrA0NycxMC4wIkU!5e0!3m2!1sen!2set!4v1730000000000"
+              width="100%"
+              height="420"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/25">
+      <div class="mx-auto max-w-6xl px-4 py-6 text-center text-sm text-white/60">
+        <span class="font-extrabold text-white/70">REPLACE:</span> Add your full footer links here if needed.
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/251911142818"
+      target="_blank"
+      rel="noreferrer"
+      class="fixed bottom-6 right-6 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-soft hover:brightness-110"
+      aria-label="Chat on WhatsApp"
+    >
+      WA
+    </a>
+
+    <div id="momentsModal" class="moments hidden" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="moments__panel glass rounded-[28px] p-5 shadow-soft md:p-6" role="document">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <div class="text-sm font-extrabold text-cyan">Team Moments</div>
+            <div class="mt-1 text-sm text-white/70">Photos and vertical clips from real workdays.</div>
+          </div>
+          <button
+            id="closeMomentsBtn"
+            class="inline-flex items-center justify-center rounded-xl border border-white/14 bg-white/10 p-2 text-white shadow-sm hover:bg-white/15"
+            type="button"
+            aria-label="Close moments"
+          >
+            <span class="text-sm font-bold">Close</span>
+          </button>
+        </div>
+
+        <div class="mt-5 grid gap-4 md:grid-cols-12">
+          <div class="moments__tile md:col-span-5">
+            <video controls playsinline preload="metadata" poster="assets/team/photo_2026-03-14_10-24-40.jpg">
+              <source src="assets/team/video_2026-03-14_10-24-45.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="moments__tile md:col-span-7">
+            <video controls playsinline preload="metadata" poster="assets/team/photo_2026-03-14_10-24-31.jpg">
+              <source src="assets/team/video_2026-03-14_10-24-43.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="moments__tile md:col-span-3">
+            <img src="assets/team/photo_2026-03-14_10-24-31.jpg" alt="Event and office setting" loading="lazy" />
+          </div>
+          <div class="moments__tile md:col-span-3">
+            <img src="assets/team/photo_2026-03-14_10-24-33.jpg" alt="Team wearing safety vests" loading="lazy" />
+          </div>
+          <div class="moments__tile md:col-span-3">
+            <img src="assets/team/photo_2026-03-14_10-24-36.jpg" alt="Team in blue uniforms" loading="lazy" />
+          </div>
+          <div class="moments__tile md:col-span-3">
+            <img src="assets/team/photo_2026-03-14_10-24-40.jpg" alt="Team group photo" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      function setExpanded(isExpanded) {
+        menuBtn?.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+        mobileMenu?.classList.toggle("hidden", !isExpanded);
+      }
+
+      menuBtn?.addEventListener("click", () => {
+        const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+        setExpanded(!expanded);
+      });
+
+      mobileMenu?.addEventListener("click", (event) => {
+        const target = event.target;
+        if (target && target.tagName === "A") setExpanded(false);
+      });
+
+      const revealEls = document.querySelectorAll("[data-reveal]");
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-inview");
+              observer.unobserve(entry.target);
+            });
+          },
+          { threshold: 0.12 }
+        );
+        revealEls.forEach((el) => observer.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add("is-inview"));
+      }
+
+      const progressEl = document.querySelector(".progress > div");
+      let praf = 0;
+
+      function updateProgress() {
+        praf = 0;
+        const max = Math.max(1, document.body.scrollHeight - window.innerHeight);
+        const p = Math.min(1, Math.max(0, window.scrollY / max));
+        if (progressEl) progressEl.style.width = `${p * 100}%`;
+      }
+
+      updateProgress();
+      window.addEventListener(
+        "scroll",
+        () => {
+          if (!praf) praf = window.requestAnimationFrame(updateProgress);
+        },
+        { passive: true }
+      );
+
+      const momentsModal = document.getElementById("momentsModal");
+      const closeMomentsBtn = document.getElementById("closeMomentsBtn");
+      const openPrimary = document.getElementById("openMomentsBtn");
+      const openFab = document.getElementById("momentsFab");
+      const openAny = document.querySelectorAll("[data-open-moments]");
+      let lastActiveEl = null;
+
+      function openMoments() {
+        if (!momentsModal) return;
+        lastActiveEl = document.activeElement;
+        momentsModal.classList.remove("hidden");
+        momentsModal.classList.add("is-open");
+        momentsModal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+        closeMomentsBtn?.focus();
+      }
+
+      function closeMoments() {
+        if (!momentsModal) return;
+        momentsModal.classList.remove("is-open");
+        momentsModal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+        momentsModal.querySelectorAll("video").forEach((video) => video.pause());
+        window.setTimeout(() => momentsModal.classList.add("hidden"), 180);
+        if (lastActiveEl && typeof lastActiveEl.focus === "function") lastActiveEl.focus();
+        lastActiveEl = null;
+      }
+
+      openPrimary?.addEventListener("click", openMoments);
+      openFab?.addEventListener("click", openMoments);
+      openAny.forEach((btn) => btn.addEventListener("click", openMoments));
+      closeMomentsBtn?.addEventListener("click", closeMoments);
+
+      momentsModal?.addEventListener("click", (event) => {
+        if (event.target === momentsModal) closeMoments();
+      });
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && momentsModal && !momentsModal.classList.contains("hidden")) closeMoments();
+      });
+
+      const faqButtons = document.querySelectorAll(".faq__btn");
+      faqButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.getAttribute("aria-controls");
+          const panel = id ? document.getElementById(id) : null;
+          const expanded = btn.getAttribute("aria-expanded") === "true";
+          btn.setAttribute("aria-expanded", expanded ? "false" : "true");
+          if (panel) panel.classList.toggle("hidden", expanded);
+        });
+      });
+
+      const themeToggle = document.getElementById("themeToggle");
+      const themeLabel = document.getElementById("themeLabel");
+      const langToggle = document.getElementById("langToggle");
+      const rootEl = document.documentElement;
+      const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+      function applyTheme(theme) {
+        rootEl.dataset.theme = theme;
+        if (metaTheme) metaTheme.setAttribute("content", theme === "dark" ? "#0b1b3a" : "#1e3a8a");
+        if (themeLabel) themeLabel.textContent = theme === "dark" ? "Light" : "Dark";
+        try {
+          localStorage.setItem("theme", theme);
+        } catch (e) {}
+      }
+
+      function applyLang(lang) {
+        document.body.dataset.lang = lang;
+        try {
+          localStorage.setItem("lang", lang);
+        } catch (e) {}
+      }
+
+      const savedTheme = (() => {
+        try {
+          return localStorage.getItem("theme");
+        } catch (e) {
+          return null;
+        }
+      })();
+      const initialTheme =
+        savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      applyTheme(initialTheme);
+
+      const savedLang = (() => {
+        try {
+          return localStorage.getItem("lang") || "en";
+        } catch (e) {
+          return "en";
+        }
+      })();
+      applyLang(savedLang);
+
+      themeToggle?.addEventListener("click", () => {
+        applyTheme(rootEl.dataset.theme === "dark" ? "light" : "dark");
+      });
+
+      langToggle?.addEventListener("click", () => {
+        applyLang(document.body.dataset.lang === "en" ? "am" : "en");
+        refreshContactLinks();
+      });
+
+      const whatsappNumber = "251911142818";
+      const whatsappLink = document.getElementById("whatsappLink");
+      const telegramLink = document.getElementById("telegramLink");
+      const telegramCardLink = document.getElementById("telegramCardLink");
+      const emailLink = document.getElementById("emailLink");
+      const emailCardLink = document.getElementById("emailCardLink");
+
+      function buildContactMessage() {
+        const isAm = document.body.dataset.lang === "am";
+        return isAm
+          ? "ሰላም Tu S የጥበቃ እና የፅዳት፣ ዋጋ/ድጋፍ ለመጠየቅ እፈልጋለሁ።"
+          : "Hello Tu S Security & Cleaning, I would like to request a quote / support.";
+      }
+
+      function refreshContactLinks() {
+        const message = `${buildContactMessage()}\\n\\nFrom: ${window.location.href}`;
+        if (whatsappLink) whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        const telegramHref = `https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(message)}`;
+        if (telegramLink) telegramLink.href = telegramHref;
+        if (telegramCardLink) telegramCardLink.href = telegramHref;
+        const subject = document.body.dataset.lang === "am" ? "Tu S ድጋፍ / ዋጋ ጥያቄ" : "Tu S Support / Quote";
+        const mailtoHref = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+        if (emailLink) emailLink.href = mailtoHref;
+        if (emailCardLink) emailCardLink.href = mailtoHref;
+      }
+
+      refreshContactLinks();
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        let raf = 0;
+        let lastX = 18;
+        let lastY = 16;
+
+        function updateSpot() {
+          raf = 0;
+          document.documentElement.style.setProperty("--spot-x", `${lastX}%`);
+          document.documentElement.style.setProperty("--spot-y", `${lastY}%`);
+        }
+
+        window.addEventListener(
+          "pointermove",
+          (event) => {
+            lastX = Math.round((event.clientX / window.innerWidth) * 100);
+            lastY = Math.round((event.clientY / window.innerHeight) * 100);
+            if (!raf) raf = window.requestAnimationFrame(updateSpot);
+          },
+          { passive: true }
+        );
+      }
+    </script>
+  </body>
+</html>
